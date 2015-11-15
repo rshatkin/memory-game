@@ -5,16 +5,19 @@ $(document).ready(function() {
   //var cardNum = $(".card").attr("class");
   var a, b;
 
-  function assignColors() {
-    var allColors = ['red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise', 'red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise'];
-    var randColor = Math.floor(Math.random() * allColors.length);
-    //var cards = document.getElementsByClassName("card");
+  // START RANDOMIZATION OF CARDS
+  var allColors = ['red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise', 'red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise'];
+  //var cards = document.getElementsByClassName("card");
+  var card = $('.card');
 
-    $('.card').each(function() {
-      $(this).addClass(randColor);
-    });
-    
-  };
+  console.log(allColors);
+  
+  for (i = 0; i <= allColors.length; i++) {
+    var randColor = allColors[Math.round(Math.random() * (allColors.length - 1))];
+    $('.card').addClass(randColor);
+  }
+
+  // END RANDOMIZATION OF CARDS
 
   $('.card').on('click', function flip() {
 
