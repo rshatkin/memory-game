@@ -2,22 +2,21 @@ $(document).ready(function() {
   var score = 0;
   var cardOne = 0;
   var cardTwo = 0;
-  //var cardNum = $(".card").attr("class");
+  // defining variables 'a' and 'c'
   var a, b;
 
   // START RANDOMIZATION OF CARDS
+  // all possible colors for set 16 square board
   var allColors = ['red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise', 'red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise'];
-  //var cards = document.getElementsByClassName("card");
-  var card = for (i = 0; i <= $('.cards').length; i++) {
-    
-  }
+  var card = $('.card');
 
-  console.log(allColors);
-  
-  for (i = 0; i <= allColors.length; i++) {
+  // for each card on board, assign a different, random color from 'allColors' array as an additional class. 
+  $(card).each(function(){
     var randColor = allColors[Math.round(Math.random() * (allColors.length - 1))];
-    $('.card').addClass(randColor);
-  }
+    console.log(randColor);
+    $(this).addClass(randColor);
+    $(randColor).pop();
+  });
 
   // END RANDOMIZATION OF CARDS
 
