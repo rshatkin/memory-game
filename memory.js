@@ -8,7 +8,9 @@ $(document).ready(function() {
   // START RANDOMIZATION OF CARDS
   var allColors = ['red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise', 'red', 'yellow', 'green', 'blue', 'purple', 'pink', 'orange', 'turquoise'];
   //var cards = document.getElementsByClassName("card");
-  var card = $('.card');
+  var card = for (i = 0; i <= $('.cards').length; i++) {
+    
+  }
 
   console.log(allColors);
   
