@@ -15,7 +15,8 @@ $(document).ready(function() {
     var randColor = allColors[Math.round(Math.random() * (allColors.length - 1))];
     console.log(randColor);
     $(this).addClass(randColor);
-    $(randColor).pop();
+    var position = allColors.indexOf(randColor);
+    allColors.splice(position, 1);
   });
 
   // END RANDOMIZATION OF CARDS
