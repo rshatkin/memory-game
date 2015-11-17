@@ -1,0 +1,68 @@
+/*Colors*/
+/*Typography*/
+body {
+  margin: 20px;
+  font-family: helvetica;
+  font-size: 14px; }
+
+.control-container {
+  margin: 10px;
+  text-align: center;
+  display: block; }
+
+.button, .reset-button {
+  background-color: #bf1;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 80px;
+  padding: 7px 10px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block; }
+  .button:hover, .reset-button:hover {
+    background-color: #8b1; }
+
+.card-container {
+  width: 372px;
+  height: 372px;
+  margin: 20px auto; }
+
+.card {
+  background-color: #8D005A;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: inline-block; }
+  .card:hover {
+    background-color: #54003b; }
+
+.matched {
+  background-color: black;
+  color: black; }
+
+.flipped.red {
+  background-color: red; }
+.flipped.orange {
+  background-color: orange; }
+.flipped.yellow {
+  background-color: yellow; }
+.flipped.green {
+  background-color: green; }
+.flipped.blue {
+  background-color: blue; }
+.flipped.purple {
+  background-color: purple; }
+.flipped.pink {
+  background-color: pink; }
+.flipped.turquoise {
+  background-color: turquoise; }
+
+/*# sourceMappingURL=memory.css.map */

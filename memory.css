@@ -1,90 +1,23 @@
-body {
-  margin: 20px;
-  font-family: helvetica;
-  font-size: 14px;
-}
+/*
+Errno::ENOENT: No such file or directory - memory.scss
 
-.control-container {
-  margin: 10px;
-  text-align: center;
-  display: block;
-}
-
-.button, .reset-button {
-  width: 80px;
-  padding: 7px 10px;
-  margin: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #bf1;
-  border-radius: 10px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.button:hover {
-  background-color: #8b1;
-}
-
-.reset-button:hover {
-  background-color: #8b1;
-}
-
-.card-container {
-  width: 372px;
-  height: 372px;
-  margin: 20px auto;
-}
-
-.card {
-  margin: 5px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  background-color: #8D005A;
-  color: #8D005A;
-  display: inline-block;
-}
-
-.card:hover {
-  background-color: #54003b;
-  color: #54003b;
-}
-
-.matched {
-  background-color: black;
-  color: black;
-}
-
-
-.flipped.red {
-  background-color: red;
-}
-
-.flipped.orange {
-  background-color: orange;
-}
-
-.flipped.yellow {
-  background-color: yellow;
-}
-
-.flipped.green {
-  background-color: green;
-}
-
-.flipped.blue {
-  background-color: blue;
-}
-
-.flipped.purple {
-  background-color: purple;
-}
-
-.flipped.pink {
-  background-color: pink;
-}
-
-.flipped.turquoise {
-  background-color: turquoise;
-}
+Backtrace:
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:482:in `read'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:293:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - memory.scss"; }

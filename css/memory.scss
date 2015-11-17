@@ -1,0 +1,119 @@
+/*Colors*/
+$primary-color: #8D005A;
+$primary-hover: #54003b;
+$btn-color: #bf1;
+$hover-btn-color: #8b1;
+
+/*Typography*/
+$primary-font: helvetica;
+
+
+@mixin button {
+  background-color: $btn-color;
+  text-transform: uppercase;
+
+  font: {
+    family: $primary-font;
+    weight: bold;
+    size: 14px;
+  }
+
+  border: {
+    radius: 10px;
+  }
+}
+
+@mixin cards {
+  background-color: $primary-color;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+
+  border: {
+    radius: 10px;
+  }
+}
+
+body {
+  margin: 20px;
+  font-family: helvetica;
+  font-size: 14px;
+}
+
+.control-container {
+  margin: 10px;
+  text-align: center;
+  display: block;
+}
+
+.button, .reset-button {
+  @include button;
+  width: 80px;
+  padding: 7px 10px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: $hover-btn-color;
+  }
+}
+
+.card-container {
+  width: 372px;
+  height: 372px;
+  margin: 20px auto;
+}
+
+.card {
+  @include cards;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.matched {
+  background-color: black;
+  color: black;
+}
+
+
+.flipped {
+  &.red {
+    background-color: red;
+  }
+
+  &.orange {
+    background-color: orange;
+  }
+
+  &.yellow {
+    background-color: yellow;
+  }
+
+  &.green {
+    background-color: green;
+  }
+
+  &.blue {
+    background-color: blue;
+  }
+
+  &.purple {
+    background-color: purple;
+  }
+
+  &.pink {
+    background-color: pink;
+  }
+
+  &.turquoise {
+    background-color: turquoise;
+  }
+}
